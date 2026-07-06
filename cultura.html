@@ -79,7 +79,29 @@
                     </optgroup>
                 </select>
             </p>
-
+            <p>
+                <label for="notaEstilo">Avalie o estilo da quebrada (0 a 10), O quanto a moda representa a sua identidade?
+                </label><br>  <!---Range: Variavel de tempo (ex: 0 a 10) e span um atributo-->
+                <input type="range" id="notaEstilo" name="notaEstilo" min="0" max="10" value="5">
+                <span> Nota selecionada:<output  name="resultadoNota" for="notaEstilo">5</output></span> 
+            </p>
+            <p>
+                <label for="acessorios">
+                Quais acessórios completam o seu look? (Segure a tecla Ctrl para selecionar mais de um):
+                </label><br>
+                <select id="acessorios" name="acessorios" multiple size="3">
+                    <option value="Boné">Boné</option>
+                    <option value="Corrente">Corrente</option>
+                    <option value="Relógio">Relógio de pulso</option>
+                    <option value="Faixa">Faixa de cabelo</option>
+                    <option value="óculos">Óculos de Sol</option>
+                </select>
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar fórmulario</button>,
+            </p>
+            </p>
             
 
         </form>
